@@ -35,7 +35,7 @@ void loop()
 }
 
 void chuyenkenh(int chanel){
-int pin[] = {22, 23, 32, 33,  25,  26, 19, 21, 18};
+int pin[] = {23, 22, 32, 33,  25,  26, 21, 19, 18};
 int cong1[]  = {0, 0, 0, 1,  1,  1, 0, 0, 0};
 int cong2[]  = {0, 1, 0, 1,  1,  1, 0, 0, 0};
 int cong3[]  = {1, 0, 0, 1,  1,  1, 0, 0, 0};
@@ -70,6 +70,11 @@ case 3:
   }
   break;
 case 4:
+  for (i = 0; i < 9; i++) {
+    digitalWrite(pin[i], cong4[i]); // bật đèn led
+  }
+  break;
+case 5:
   for (i = 0; i < 9; i++) {
     digitalWrite(pin[i], cong4[i]); // bật đèn led
   }
