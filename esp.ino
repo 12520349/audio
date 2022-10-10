@@ -76,7 +76,7 @@ case 4:
   break;
 case 5:
   for (i = 0; i < 9; i++) {
-    digitalWrite(pin[i], cong4[i]); // bật đèn led
+    digitalWrite(pin[i], cong5[i]); // bật đèn led
   }
   break;
 case 6:
